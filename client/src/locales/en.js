@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -103,6 +104,12 @@ export default {
 
   // Orders
   orders: {
+    submittedOrders: 'Submitted Orders',
+    noSubmittedOrders: 'No submitted orders yet.',
+    submittedLoadError: 'Failed to load submitted orders',
+    leadTime: 'Lead Time',
+    submittedDate: 'Submitted',
+    leadTimeDays: '{count} days',
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',
@@ -200,6 +207,7 @@ export default {
 
   // Statuses
   status: {
+    submitted: 'Submitted',
     delivered: 'Delivered',
     shipped: 'Shipped',
     processing: 'Processing',
@@ -324,5 +332,51 @@ export default {
     filter: 'Filter',
     export: 'Export',
     items: 'items'
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Plan restock orders for forecasted demand shortfalls within a budget',
+    budgetLabel: 'Restocking budget',
+    budgetHint: 'Items are prioritized by demand trend, then by shortfall cost',
+    stats: {
+      budget: 'Budget',
+      plannedSpend: 'Planned Spend',
+      remaining: 'Remaining',
+      itemsRecommended: 'Items Recommended'
+    },
+    recommendations: 'Recommended Restock Items',
+    empty: 'No items fit within the current budget. Increase the budget to see recommendations.',
+    noShortfall: 'No items currently have a forecasted demand shortfall.',
+    table: {
+      sku: 'SKU',
+      item: 'Item',
+      trend: 'Trend',
+      shortfall: 'Shortfall',
+      quantity: 'Recommended Qty',
+      unitCost: 'Unit Cost',
+      lineTotal: 'Line Total',
+      leadTime: 'Lead Time'
+    },
+    days: '{count} days',
+    placeOrder: 'Place Order',
+    loadError: 'Failed to load demand forecasts',
+    submitError: 'Failed to submit restock order. Please try again.',
+    successTitle: 'Restock order submitted',
+    successMessage: 'Order {orderNumber} was submitted. Expected delivery: {date}.',
+    viewOrder: 'View in Orders',
+    dismiss: 'Dismiss',
+    modal: {
+      title: 'Confirm Restock Order',
+      summary: 'Review the items below before submitting.',
+      total: 'Order Total',
+      budget: 'Budget',
+      expectedDelivery: 'Expected Delivery',
+      cancel: 'Cancel',
+      confirm: 'Confirm Order',
+      submitting: 'Submitting...',
+      close: 'Close'
+    }
   }
 }
