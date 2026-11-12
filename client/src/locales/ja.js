@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充発注',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -103,6 +104,12 @@ export default {
 
   // Orders
   orders: {
+    submittedOrders: '発注済みオーダー',
+    noSubmittedOrders: '発注済みのオーダーはまだありません。',
+    submittedLoadError: '発注済みオーダーの読み込みに失敗しました',
+    leadTime: 'リードタイム',
+    submittedDate: '発注日',
+    leadTimeDays: '{count}日',
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
@@ -200,6 +207,7 @@ export default {
 
   // Statuses
   status: {
+    submitted: '発注済み',
     delivered: '配達済み',
     shipped: '出荷済み',
     processing: '処理中',
@@ -378,5 +386,51 @@ export default {
     'Premier Industries': 'プレミア工業',
     'Stellar Components Ltd': 'ステラコンポーネンツ',
     'Dynamic Systems Ltd': 'ダイナミックシステムズ'
+  },
+
+  // Restocking
+  restocking: {
+    title: '補充発注',
+    description: '予算内で予測需要の不足分に対する補充発注を計画します',
+    budgetLabel: '補充予算',
+    budgetHint: '品目は需要トレンド、次に不足コストの順に優先されます',
+    stats: {
+      budget: '予算',
+      plannedSpend: '計画支出',
+      remaining: '残額',
+      itemsRecommended: '推奨品目数'
+    },
+    recommendations: '推奨補充品目',
+    empty: '現在の予算に収まる品目がありません。予算を増やすと推奨が表示されます。',
+    noShortfall: '予測需要の不足がある品目はありません。',
+    table: {
+      sku: 'SKU',
+      item: '品目',
+      trend: 'トレンド',
+      shortfall: '不足数',
+      quantity: '推奨数量',
+      unitCost: '単価',
+      lineTotal: '小計',
+      leadTime: 'リードタイム'
+    },
+    days: '{count}日',
+    placeOrder: '発注する',
+    loadError: '需要予測の読み込みに失敗しました',
+    submitError: '補充発注の送信に失敗しました。もう一度お試しください。',
+    successTitle: '補充発注を送信しました',
+    successMessage: '注文 {orderNumber} を送信しました。配達予定日: {date}。',
+    viewOrder: '注文を表示',
+    dismiss: '閉じる',
+    modal: {
+      title: '補充発注の確認',
+      summary: '送信前に以下の品目を確認してください。',
+      total: '注文合計',
+      budget: '予算',
+      expectedDelivery: '配達予定日',
+      cancel: 'キャンセル',
+      confirm: '注文を確定',
+      submitting: '送信中...',
+      close: '閉じる'
+    }
   }
 }
